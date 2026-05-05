@@ -30,7 +30,7 @@ Or in `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-org/StorageKit.git", from: "1.0.0")
+    .package(url: "https://github.com/Coderkube-App/StorageKit.git", from: "1.0.0")
 ],
 targets: [
     .target(
