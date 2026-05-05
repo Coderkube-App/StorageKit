@@ -172,6 +172,18 @@ Run tests:
 swift test
 ```
 
+## Automated Versioning
+
+This repository uses a GitHub Actions workflow to automatically create version tags and GitHub Releases after changes are merged into `main`.
+
+Version bump rules:
+
+- `fix:` or other non-breaking commits -> patch bump (`x.y.Z`)
+- `feat:` -> minor bump (`x.Y.0`)
+- `BREAKING CHANGE` in the commit body or footer -> major bump (`X.0.0`)
+
+The workflow runs from `.github/workflows/automated-versioning.yml` and generates release notes automatically for each new version.
+
 Current tests cover:
 
 - Codable save/fetch/delete
